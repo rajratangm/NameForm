@@ -5,17 +5,17 @@ function App() {
   const [firstName, setFirstName]= useState('')
   const [lastName, setLastName]= useState('')
   const [submitted, setSubmitted] = useState(false)
-  const handleSubmit=(event)=>{
-    event.preventDefault()
+  const handleSubmit=()=>{
+    preventDefault()
     setSubmitted(true)
   }
 
-  const handleFirstName=(event)=>{
-    setFirstName(event.target.value)
+  const handleFirstName=()=>{
+    setFirstName(firstName)
   }
 
-  const handleLastName=(event)=>{
-    setLastName(event.target.value)
+  const handleLaststName=()=>{
+    setLastName(lastName)
   }
 
   
@@ -31,16 +31,16 @@ function App() {
       </div>
       <div>
         <label>Last Name:</label>
-        <input type='text' value={lastName} onChange={handleLastName} required/>
+        <input type='text' value={lastName} onChange={handleLaststName} required/>
       </div>
-      <button type='submit'>Submit</button>
+      <button>Submit</button>
 
     </form>
 
     {
       submitted &&(
         <p>
-          Full Name: {firstName} {lastName}
+          Full Name: {firstName}
         </p>
       )
     }

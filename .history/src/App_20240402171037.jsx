@@ -14,7 +14,7 @@ function App() {
     setFirstName(event.target.value)
   }
 
-  const handleLastName=(event)=>{
+  const handleLaststName=(event)=>{
     setLastName(event.target.value)
   }
 
@@ -31,7 +31,7 @@ function App() {
       </div>
       <div>
         <label>Last Name:</label>
-        <input type='text' value={lastName} onChange={handleLastName} required/>
+        <input type='text' value={lastName} onChange={handleLaststName} required/>
       </div>
       <button type='submit'>Submit</button>
 

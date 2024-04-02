@@ -31,7 +31,7 @@ function App() {
       </div>
       <div>
         <label>Last Name:</label>
-        <input type='text' value={lastName} onChange={handleLastName} required/>
+        <input type='text' value={lastName} onChange={handleLasttName} required/>
       </div>
       <button type='submit'>Submit</button>
 
